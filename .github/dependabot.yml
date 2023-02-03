@@ -5,13 +5,28 @@
 
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    schedule:
-      interval: "daily"
-    directory: "/"
-    schedule-ignore-file: false
-    automerge: false
-    labels:
-      - "dependencies"
-    ignore:
-      - dependency-name: "mathjs"
+
+package-ecosystem: "npm"
+schedule:
+interval: "daily"
+directory: "/"
+schedule-ignore:
+path: "package.json"
+dependency-types:
+"dependencies"
+package-names:
+"mathjs"
+labels:
+"dependabot"
+author-association: "none"
+review-labels:
+"dependabot"
+persist-months: 3
+max-concurrent-reviews: 1
+assignees: []
+notifications:
+email: false
+slack: false
+webhooks: []
+opensource-template: "default"
+
