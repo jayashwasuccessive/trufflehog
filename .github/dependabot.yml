@@ -5,12 +5,9 @@
 
 version: 2
 updates:
-  - package-ecosystem: "gomod" # See documentation for possible values
-    directory: "/" # Location of package manifests
+  - package-ecosystem: "npm"
     schedule:
-      interval: "weekly"
-  - package-ecosystem: "github-actions"
+      interval: "daily"
     directory: "/"
-    schedule:
-      # Check for updates to GitHub Actions every weekday
-      interval: "weekly"
+    exclusions:
+      - "math.js"
