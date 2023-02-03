@@ -10,4 +10,4 @@ updates:
       interval: "daily"
     directory: "/"
     exclusions:
-      - "math.js"
+      - "mathjs"
